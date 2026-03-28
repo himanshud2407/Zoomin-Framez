@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ANDY HARDY | Creative Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&amp;family=Inter:wght@300;400;600&amp;family=Space+Grotesk:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-high": "#2d2a1c",
+                        "outline-variant": "#434749",
+                        "tertiary-fixed": "#f1e2af",
+                        "on-primary-fixed-variant": "#40484b",
+                        "on-secondary": "#263236",
+                        "inverse-on-surface": "#333122",
+                        "secondary-fixed": "#d7e5e9",
+                        "primary-fixed-dim": "#c0c8cb",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#d4c695",
+                        "on-tertiary-fixed-variant": "#504621",
+                        "on-tertiary": "#38300c",
+                        "primary-container": "#cbd3d6",
+                        "on-secondary-container": "#aab7bc",
+                        "error": "#ffb4ab",
+                        "surface-bright": "#3c392b",
+                        "error-container": "#93000a",
+                        "on-error": "#690005",
+                        "surface-dim": "#161407",
+                        "on-tertiary-container": "#635932",
+                        "surface": "#161407",
+                        "tertiary-container": "#dfd1a0",
+                        "secondary-container": "#3c494c",
+                        "on-surface": "#e9e2cd",
+                        "on-primary-fixed": "#151d1f",
+                        "primary": "#e7eff2",
+                        "surface-container-lowest": "#100e04",
+                        "primary-fixed": "#dce4e7",
+                        "surface-container-highest": "#383526",
+                        "secondary": "#bbc9cd",
+                        "inverse-surface": "#e9e2cd",
+                        "tertiary": "#fcedba",
+                        "surface-tint": "#c0c8cb",
+                        "on-primary-container": "#535b5e",
+                        "surface-container": "#222013",
+                        "on-tertiary-fixed": "#221b00",
+                        "on-background": "#e9e2cd",
+                        "on-surface-variant": "#c3c7c9",
+                        "secondary-fixed-dim": "#bbc9cd",
+                        "background": "#161407",
+                        "surface-variant": "#383526",
+                        "on-primary": "#2a3234",
+                        "on-secondary-fixed": "#111d21",
+                        "surface-container-low": "#1e1c0f",
+                        "inverse-primary": "#586062"
+                    },
+                    fontFamily: {
+                        "headline": ["Epilogue", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Space Grotesk", "monospace"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        .circular-badge {
+            animation: rotate 20s linear infinite;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .cinematic-vignette {
+            background: radial-gradient(circle, transparent 20%, rgba(16, 14, 4, 0.8) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#161407]/70 backdrop-blur-xl flex justify-between items-center px-8 py-6 w-full">
+<div class="font-['Epilogue'] font-bold text-xl tracking-tighter text-[#E9E2CD]">ANDY HARDY</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex space-x-12">
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-xs text-[#E7EFF2] font-bold border-b border-[#E7EFF2] pb-1" href="#">Work</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-xs text-[#E9E2CD]/60 hover:text-[#E7EFF2] transition-colors" href="#">Studio</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-xs text-[#E9E2CD]/60 hover:text-[#E7EFF2] transition-colors" href="#">Journal</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-xs text-[#E9E2CD]/60 hover:text-[#E7EFF2] transition-colors" href="#">Contact</a>
+</div>
+<button class="md:hidden text-[#E7EFF2] hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 z-0">
+<img alt="Cinematic landscape" class="w-full h-full object-cover opacity-60 grayscale-[0.3]" data-alt="Dark moody cinematic mountain landscape at dawn with deep shadows and mist in a valley with an olive tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn0b8zC6O3CDkzsxgsZR3C1oGsJ86wswq_4h8lPAlL_drQFgfT-BvuqeqOnqLT1SxIOw-fF80Ysm9CXDykxMy51a8vq1xrBN4mZvHSmjAPfXMaj0DmCUgOGs8UisVaAqB1dLYils7a1HcjJCLc3krE7faCWNRj2xvzfpbPyMcNZozCKpbUBsvhcq4GHHVQHRvmTDqAGSNT7cOod2m-weUlAb9bMU_PBppqEwMDW2pvaejbvEGr9Z8bZ_cVZB314Y0JBHXno5qDsgE"/>
+<div class="absolute inset-0 cinematic-vignette"></div>
+</div>
+<div class="relative z-10 text-center">
+<h1 class="font-headline font-extrabold text-[12vw] leading-none tracking-tighter text-primary">ANDY!</h1>
+</div>
+<!-- Metadata labels -->
+<div class="absolute bottom-12 left-8 md:left-12 space-y-4 max-w-xs">
+<p class="font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant">45.523062 / -122.676482</p>
+<p class="font-label text-xs uppercase leading-relaxed text-on-surface">Creative Director &amp; Multi-disciplinary artist based in the Pacific Northwest.</p>
+</div>
+<div class="absolute bottom-12 right-8 md:right-12">
+<div class="font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant flex items-center gap-2">
+                    Scroll to Explore <span class="material-symbols-outlined text-xs">arrow_downward</span>
+</div>
+</div>
+</section>
+<!-- Portfolio Grid (Asymmetric) -->
+<section class="py-32 px-6 md:px-12 bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="relative aspect-[3/4] overflow-hidden group">
+<img alt="Mountain project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dramatic high contrast black and white photo of a mountain peak with deep shadows and sharp edges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASsEOM43D4Vku4TAa6xE8pOTHqcZrOgfG4899cXk3E3l-m6W4WlULBYg4ff2fnTkcQ7xjWoZ3rMTNm2T1swSOrzrEsU56a-Qnhz5x1h4FFB2iGYP5JzTCZE10Df7-cuw7GC6h0slAoDg5DJfS1O9QObsFszlcJUmOf9L_-gAUuaNNWAtBkbcpxJ7RlGDLgdVnOjK1_sQKhIUJLo_MXzp60Qoqg3nDHmC7QXoPyyzFM_xW8KUsCYCeAAtoYbgtW2sp5vmwiqoGOi_c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent p-8 flex flex-col justify-end">
+<h3 class="font-headline text-2xl font-bold mb-2">View Portfolio</h3>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Collection 2024</p>
+</div>
+</div>
+<!-- Card 2 (Offset) -->
+<div class="relative aspect-[3/4] overflow-hidden group md:mt-16">
+<img alt="Studio project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Atmospheric dark studio interior with a single focused light on a piece of mountain biking gear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkC4CyZPA3rJ4P8-s6vqKT6HVni5t8eUR-qyJFjBgy_ld8ItJd5-np-NFfqReKVwvefmPoCjzY1puv7xURV9bk3VS1rlvWUvcAKBhm0D2642I_Ms9PQwQqL4EPN8PHBjDUIIEDSjVK4Q4RKVz-Uz9qty1Fh7-6lFtygefbB6ja6H_zB1otRrwKGermLS40pGIjRo436zzMRK1aSeMifUOf0Tet0uvoZpfYZYeIHnLUBSwW5kicgHR07u_aTbBw-nduUQEf-SXk-Ic"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent p-8 flex flex-col justify-end">
+<h3 class="font-headline text-2xl font-bold mb-2">Mail List</h3>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Join the community</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="relative aspect-[3/4] overflow-hidden group">
+<img alt="Alpine project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist alpine scene with a lone tree in a vast snowy field under a dark moody sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp_iDAyMgEtimc2kyUipW5WcykaUaUgYCzWrt_CW-Ij9MslGznmr2TQWgYm3Xki42WKteTczCFBKn_ZBOhcP97MDpw0dBvI-r7HWo9H1sm-WVACd1i2C__ZSKdX2BcUq3u5FOB_5yJ1yDJFAoXzdYi2IIzqZbnKBajKTxhWBJQFB4_t5J6BUTap60v6vFqJ-rcQTk_yLSZ75WRRmg9HqsSnqrx02Ry1577jGUJ62H5M2PpmwFRNaKE1kp4oFfco1WsIBxB1XFg3pI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent p-8 flex flex-col justify-end">
+<h3 class="font-headline text-2xl font-bold mb-2">Journal</h3>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Stories from the field</p>
+</div>
+</div>
+<!-- Card 4 (Offset) -->
+<div class="relative aspect-[3/4] overflow-hidden group md:mt-16">
+<img alt="Outdoor project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Silhouette of a mountain biker jumping against a dark sunset sky with deep oranges and blacks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEuF4Io0cjvmVrFnCsrPrQY1-71FzIne2pesvTWQ-8BiSD-e2etIyDkrKR9RyMYRyDho6J9i8k-QzXUHOGuHabFzF7owEgEdcK1V0IYxWziWd9JRsLY9KAzEhP5eKSkmakj2yCm1mFXOwnmGnaPj-bz3kXuufKnDbtYOLtkMJvdgLaEulhFN8vZ-5frUxg-1m6JTtakZcHFxH_q1aRl44sm10AoWK1YsjWPrkCW0C-dyYJztez2y3il6caKcYcomis7efR-3YYl94"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent p-8 flex flex-col justify-end">
+<h3 class="font-headline text-2xl font-bold mb-2">Studio</h3>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Services &amp; Collabs</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Creative Director Section -->
+<section class="relative py-32 px-6 md:px-12 bg-surface-container-low flex flex-col md:flex-row items-center gap-16 overflow-hidden">
+<div class="relative w-full md:w-1/2 flex justify-center">
+<div class="relative max-w-md">
+<img alt="Andy Hardy Portrait" class="w-full aspect-[4/5] object-cover grayscale" data-alt="Moody cinematic portrait of a creative man in a dark environment with soft side lighting and professional gaze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIrTVhu6xHz51VOvO_Lrd3xXnOEGIZYJfQ-ZeuttnzMvd0Kg6BNs4KdKTm2oavkkEFZn1R_p1JBRdpK17m6t6ZF-KYfUtwWrUIZEGoSa8Qv5uF6JAtYT4s3kU7H_cBOJPDDjs_SdXYhGSM56n_lPvQ4BkAy6uZFzs8HdNTPU0A3U0jM95tB1CehjjXKyjpSsrbGiL7WKwI9J-LTSUZ-2GPhRA3EhbSt4Y-rlwkygddg7aXnCHybJl7fP40VJ3e7djnb3JPjZ7WRh0"/>
+<!-- Circular Badge -->
+<div class="absolute -top-12 -right-12 w-32 h-32 md:w-48 md:h-48 flex items-center justify-center">
+<svg class="circular-badge w-full h-full" viewbox="0 0 100 100">
+<defs>
+<path d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" id="circlePath"></path>
+</defs>
+<text class="fill-primary font-label text-[8px] uppercase tracking-[0.3em]">
+<textpath xlink:href="#circlePath">Creative Director • Studio Head • Visual Storyteller • </textpath>
+</text>
+</svg>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-8 max-w-xl">
+<div class="font-label text-xs uppercase tracking-[0.4em] text-primary">About Andy Hardy</div>
+<h2 class="font-headline text-5xl md:text-6xl font-extrabold leading-tight text-on-surface">Curating the digital frontier.</h2>
+<p class="text-on-surface-variant body-lg leading-relaxed">
+                    Based in the Pacific Northwest, Andy Hardy leads a multi-disciplinary creative studio focused on high-end visual storytelling. From technical mountain expeditions to meticulous brand identities, the goal is always to debut the extraordinary.
+                </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-4 group" href="#">
+<span class="font-label text-xs uppercase tracking-widest border-b border-primary pb-1">Our Philosophy</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Portfolio Teaser (Collage) -->
+<section class="py-32 bg-surface overflow-hidden">
+<div class="container mx-auto px-6 relative h-[600px] md:h-[800px]">
+<div class="absolute top-0 left-0 w-1/3 md:w-1/4 aspect-square z-10 rotate-[-5deg] shadow-2xl">
+<img alt="Action shot 1" class="w-full h-full object-cover" data-alt="Action mountain biking shot on a dirt trail through a dense forest with dramatic sun beams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDos3h8T4-bsH4syCVqrBx67oOa8zD-YC6BForIFXlhOWn8QsJZfY5lhW7MNVw_J4CLNMGCIZtgwgRjHwudKSthu41XdFix8eOuWPp1b5de4vKprDyy_oep7ZCiMqEmpkBB8u_enBisJpShnZGWxeE9XtWmYqc16i9f4E8f6eWvXOy-6NdZTnMkPNVSMezUK189OsbprCld76yIvtuGl49eANo-XIDWWCEYZkZnA0kQ7W1i3zVvlQcQNHzJilA2CSv3i-d21LqUTVw"/>
+</div>
+<div class="absolute top-1/4 right-0 w-1/2 md:w-2/5 aspect-video z-0 shadow-2xl">
+<img alt="Landscape shot" class="w-full h-full object-cover" data-alt="Breathtaking wide shot of mountain ranges at dusk with deep purple and blue hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADVT2LV8787euNpbbaPrMooe13GobyG9rGLNAcHpRqUdUcUf7T1AZmOpjIKsMZJET0pkj01bLGb2OOVkOGlD58muxx_0BPp3zGu6BBY_LuKzLrQGitFE29AAiyHlbvPzpNe0RQl1p9XZ91_RrKlmLtT1_edmi56xymWs4FuHoytokfQq64yrre3j9sFCXyCIPgwAo_aCY5Mt2npDzdnO64Sb9OuX0qPXFrO3_5RHqn6QpWl9EgOa_Qpw5b15VU65RR6Z-8QGOlWBc"/>
+</div>
+<div class="absolute bottom-0 left-1/4 w-1/4 md:w-1/5 aspect-[3/4] z-20 rotate-[10deg] shadow-2xl">
+<img alt="Nature detail" class="w-full h-full object-cover" data-alt="Macro detail of mountain rock texture and moss with cold atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVQuu1qKZa_YYDYzL1lVUBrc8JW3giZdmQhfaUb5n2SMPCyOTgCqzkLJcj_e5aul_PqyTTupzhksmcY7VZwHZvHuUGsXQdjaQyyYkKO86eb2JS8v34d4xLndkSr5_ulDlNVJWWJ7mQJsUxcb1dU8_Qnin5cEytix7ArFet_rDc42mUySCehlbOYIGQg2BMQqudv_Anxe6a6vdry2GQVifJsUjDfO4STTTXk2c3rhuC2UJGLTMub5vn1i5zrTAJ_lovdV148gilxxM"/>
+</div>
+<div class="absolute inset-0 flex items-center justify-center z-30">
+<a class="bg-primary text-on-primary px-10 py-5 rounded-full font-label text-sm uppercase tracking-widest hover:bg-primary-container transition-colors shadow-2xl" href="#">
+                        View Portfolio
+                    </a>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-40 px-6 md:px-12 bg-surface-container-lowest border-t border-outline-variant/10 text-center">
+<div class="font-label text-xs uppercase tracking-[0.5em] text-on-surface-variant mb-8">Get In Touch</div>
+<a class="font-headline text-4xl md:text-7xl lg:text-[8vw] font-extrabold tracking-tighter text-primary hover:text-on-surface transition-colors break-all" href="mailto:hello@andyhardy.co">
+                hello@andyhardy.co
+            </a>
+<div class="mt-20 flex flex-col md:flex-row justify-between items-center gap-12 max-w-6xl mx-auto">
+<div class="text-left space-y-4">
+<div class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Social Channels</div>
+<div class="flex gap-8">
+<a class="font-label text-sm uppercase tracking-widest hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-label text-sm uppercase tracking-widest hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-label text-sm uppercase tracking-widest hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+</div>
+<div class="text-right hidden md:block">
+<div class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Office</div>
+<p class="font-label text-sm uppercase tracking-widest">Portland, OR / Remote</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#100E04] w-full py-20 px-8 flex flex-col md:flex-row justify-between items-end w-full space-y-8">
+<div class="font-['Epilogue'] font-bold text-[#E9E2CD] text-2xl tracking-tighter">ANDY HARDY STUDIO</div>
+<div class="flex flex-col items-end gap-4">
+<div class="flex gap-6">
+<a class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-[#E9E2CD]/40 hover:text-[#E7EFF2] transition-all hover:translate-x-1" href="#">Instagram</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-[#E9E2CD]/40 hover:text-[#E7EFF2] transition-all hover:translate-x-1" href="#">LinkedIn</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-[#E9E2CD]/40 hover:text-[#E7EFF2] transition-all hover:translate-x-1" href="#">Twitter</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-[#E9E2CD]/40 hover:text-[#E7EFF2] transition-all hover:translate-x-1" href="#">Email</a>
+</div>
+<div class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-[#E9E2CD]/40">
+                © 2024 ANDY HARDY STUDIO. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
