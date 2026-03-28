@@ -104,7 +104,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="+91 00000 00000"
+                    required
                     className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-[#E9E2CD] focus:outline-none focus:border-[#E9E2CD]/50 transition-colors"
                   />
                 </div>
