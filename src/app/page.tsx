@@ -104,7 +104,7 @@ export default function Home() {
               style={{ y: backgroundY }}
             >
               <Image
-                src="/photo/Photo (214).JPG"
+                src="/photo/Photo (214).jpg"
                 alt="Zoomin Framez Hero Background"
                 fill
                 className="object-cover opacity-80"
