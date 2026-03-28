@@ -6,6 +6,7 @@ import { supabase } from "@/lib/supabase";
 export async function submitContactForm(formData: FormData) {
   const name = formData.get("name") as string;
   const email = formData.get("email") as string;
+  const phone = formData.get("phone") as string;
   const message = formData.get("message") as string;
 
   if (!name || !email || !message) {
@@ -14,15 +15,14 @@ export async function submitContactForm(formData: FormData) {
 
   try {
     // 1. Store the message in Supabase
-    // Make sure your table is called 'messages' or 'contacts' with appropriate columns
     const { error: supabaseError } = await supabase
       .from('contact_submissions')
       .insert([
         { 
           name, 
           email, 
-          message,
-          created_at: new Date().toISOString()
+          phone,
+          message
         }
       ]);
 
@@ -40,6 +40,7 @@ export async function submitContactForm(formData: FormData) {
         <h2>New Contact Submission</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
         <p><strong>Message:</strong></p>
         <blockquote style="padding: 1rem; background: #f5f5f5; border-left: 4px solid #ccc;">
           ${message}

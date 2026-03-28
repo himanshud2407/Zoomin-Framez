@@ -100,6 +100,16 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 </div>
 
                 <div className="flex flex-col gap-1">
+                  <label className="font-label text-[10px] uppercase tracking-widest text-[#E9E2CD]/50 font-bold">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+91 00000 00000"
+                    className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-[#E9E2CD] focus:outline-none focus:border-[#E9E2CD]/50 transition-colors"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-1">
                   <label className="font-label text-[10px] uppercase tracking-widest text-[#E9E2CD]/50 font-bold">Message</label>
                   <textarea
                     name="message"
