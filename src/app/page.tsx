@@ -406,7 +406,7 @@ export default function Home() {
               {/* Service 1 */}
               <div className="group relative overflow-hidden rounded-[2.5rem] border border-outline-variant/10 h-[450px] transition-all duration-500">
                 <Image
-                  src="/photo/Photo (1).JPG"
+                  src="/photo/Photo (1).jpg"
                   alt="Wedding Photography"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60"
